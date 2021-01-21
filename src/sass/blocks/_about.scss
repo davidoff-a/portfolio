@@ -1,0 +1,16 @@
+.about{
+    padding: 120px 100px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    &__photo {
+        width: 40px;
+        height: 100%;
+    }
+    &__descr {
+        width:570px;
+        min-height: 530px;
+        display: grid;
+        grid-template: repeat(4, 120px) / repeat(2, 260px);
+    }
+}
