@@ -11,6 +11,8 @@
         width:570px;
         min-height: 530px;
         display: grid;
-        grid-template: repeat(4, 120px) / repeat(2, 260px);
+        grid-template: 1fr repeat(2, 120px) / repeat(2, 260px);
+        row-gap: 20px;
+        column-gap: 50px;
     }
 }
