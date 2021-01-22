@@ -30,15 +30,27 @@
     }
     &__skills{
         display: grid;
-        grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template: repeat(2, minmax(115px, auto))/repeat(2, 260px);
+        grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;
-    &-item{
+    &-item {
         display: grid;
-        grid-template-rows: 40px 200px;
-        
-
+        grid-template-rows: 40px minmax(115px, auto);
+        column-gap: 20px;
+        }
+    &-circle {
+        padding: 15px 0 0 15px;
+            position: relative;
+            @include before_circle;
+            &:before{
+                top: 0;
+            }
+    }
+    &-text{
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 6px;
     }
     }
 }
