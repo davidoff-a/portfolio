@@ -1,27 +1,62 @@
-.skills{
-    padding-top: 126px;
-    &__block{
-        padding: 60px 10px 0 10px;
-        display: grid;
-        grid-template: repeat(2, 270px)/repeat(4, 270px);
-        grid-auto-rows: 270px;
-        gap: 13px;
-        &-item {
-            padding: 30px 30px 25px 30px;
-            border: 1px solid #000;
-            width:270px;
-            height: 270px;
-        }
-        &-header{
-            margin-top: 20px;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 21px;
-        }
-        &-descr{
-            margin-top: 15px;
-            font-size: 12px;
-            line-height: 18px;  
-        }
-    }
+.skills {
+	padding-top: 126px;
+	&__block {
+		padding: 60px 10px 0 10px;
+		display: grid;
+		grid-template: repeat(2, 270px) / repeat(4, 270px);
+		grid-auto-rows: 270px;
+		gap: 13px;
+		&-item {
+			padding: 30px 30px 25px 30px;
+			border: 1px solid #000;
+			width: 270px;
+			height: 270px;
+		}
+		&-header {
+			margin-top: 20px;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 21px;
+		}
+		&-descr {
+			margin-top: 15px;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+}
+.progress {
+	padding-top: 120px;
+	width: 100%;
+	height: 170px;
+	display: grid;
+	grid-template: repeat(2, 70px) / repeat(3, 350px);
+	grid-auto-rows: repeat(2, 70px);
+	row-gap: 30px;
+	column-gap: 45px;
+	&__bar {
+		width: 350px;
+		height: 70px;
+		&__header {
+			display: flex;
+			justify-content: space-between;
+            align-items: flex-start;
+            padding: 8px 14px 0 14px;
+			&-title {
+				font-size: 14px;
+				line-height: 21px;
+				font-weight: 700;
+				@include before_circle;
+			}
+			&-num {
+				font-size: 14px;
+				line-height: 21px;
+			}
+		}
+		&-indicator {
+			width: 350px;
+			height: 14px;
+			background-color: $main-color;
+		}
+	}
 }
