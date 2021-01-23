@@ -58,6 +58,7 @@
 				line-height: 21px;
 				font-weight: 700;
 				&:before {
+					content:'';
 					position: absolute;
 					top: -8px;
 					left: -14px;
