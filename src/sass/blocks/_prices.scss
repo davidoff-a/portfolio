@@ -6,6 +6,7 @@
         grid-template: repeat(3, 45px)/repeat(2, 370px);
         column-gap: 300px;
         row-gap: 15px;
+        list-style-type: none;
         &-item{
             position: relative;
             padding-left: 25px;
