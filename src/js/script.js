@@ -12,8 +12,8 @@ closeElem.addEventListener('click', () => {
 	menu.classList.remove('active');
 });
 
-const counters = document.querySelectorAll('.progress__bar__header-num');
-const lines = document.querySelectorAll('.progress__bar__meter-indicate');
+const counters = document.querySelectorAll('.progress__bar-num');
+const lines = document.querySelectorAll('.progress__bar-meter span');
 counters.forEach((item,i)=>{
 	lines[i].style.width=item.innerHTML;
 })
