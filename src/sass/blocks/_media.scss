@@ -38,12 +38,12 @@
 		}
 	}
 	.progress {
-		margin-top: 90px;
-		&__bars {
-			grid-template: repeat(3, 70px) / repeat(2, 350px);
+		padding-top: 120px;
+		&__wrapper {
+			grid-template: repeat(2, 70px) / repeat(3, 300px);
 			grid-auto-rows: 70px;
-			row-gap: 30px;
-			column-gap: 45px;
+			row-gap: 30;
+			column-gap: 30px;
 		}
 	}
 }
@@ -85,6 +85,15 @@
 			grid-template: repeat(3, 300px) / repeat(2, 300px);
 			grid-auto-rows: 300px;
 			gap: 40px;
+		}
+	}
+	.progress{
+		padding-top: 90px;
+		&__wrapper{
+			grid-template: repeat(3, 70px) / repeat(2, 340px);
+			grid-auto-rows: 70px;
+			row-gap: 30;
+			column-gap: 40px;
 		}
 	}
 }
@@ -137,6 +146,15 @@
 				width: 255px;
 				height: 255px;
 			}
+		}
+	}
+	.progress{
+		padding-top: 60px;
+		&__wrapper{
+			grid-template: repeat(3,70px)/repeat(2,255px);
+			grid-auto-rows: 70px;
+			row-gap: 30px;
+			column-gap: 30px;
 		}
 	}
 }
@@ -202,6 +220,14 @@
 				width: 270px;
 				height: 270px;
 			}
+		}
+	}
+	.progress{
+		padding-top: 40px;
+		&__wrapper{
+			grid-template: repeat(6,70px)/300px;
+			grid-auto-rows: 70px;
+			row-gap: 40px;
 		}
 	}
 }
