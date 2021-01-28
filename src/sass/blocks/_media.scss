@@ -14,7 +14,7 @@
 		}
 		&__skills {
 			column-gap: 20px;
-			grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+			grid-template: repeat(2, minmax(115px, auto)) / repeat(auto-fit, 270px);
 			&-item {
 				column-gap: 15px;
 				grid-template-columns: 40px 195px;
@@ -32,21 +32,46 @@
 		padding-top: 120px;
 		&__block {
 			padding: 60px 62px 0 62px;
-			grid-template: repeat(3, 270px) / repeat(3, 270px);
+			grid-template: repeat(3, 270px) / repeat(auto-fit, 270px);
 			grid-auto-rows: 270px;
 			gap: 15px;
+			justify-content: space-around;
 		}
 	}
 	.progress {
 		padding-top: 120px;
 		&__wrapper {
-			grid-template: repeat(2, 70px) / repeat(3, 300px);
+			grid-template: repeat(2, 70px) / repeat(auto-fit, 350px);
 			grid-auto-rows: 70px;
 			row-gap: 30;
 			column-gap: 30px;
+			justify-content: space-around;
 		}
 	}
-}
+	.works {
+		margin-top: 80px;
+
+		&__done {
+			margin-top: 40px;
+			grid-template: repeat(2, 280px)/repeat(auto-fit, 280px);
+			grid-auto-rows: 280px;
+			justify-content: space-between;
+			row-gap: 50px;
+		}
+		#horizonal,
+		#vertical {
+			grid-row: unset;
+			grid-column: unset;
+		}
+		}
+
+		.price {
+			&__list {
+				grid-template: repeat(3, 45px)/repeat(auto-fit, 365px);
+				column-gap: 130px;
+			}
+		}
+		}
 
 @media (max-width: 992px) {
 	.container {
@@ -82,19 +107,25 @@
 	.skills {
 		&__block {
 			padding: 60px 40px 0 40px;
-			grid-template: repeat(3, 300px) / repeat(2, 300px);
-			grid-auto-rows: 300px;
-			gap: 40px;
+			grid-template: repeat(3, 270px) / repeat(auto-fit, 270px);
+			grid-auto-rows: 270px;
+			gap: 30px;
+			justify-content: space-between;
 		}
 	}
 	.progress{
 		padding-top: 90px;
 		&__wrapper{
-			grid-template: repeat(3, 70px) / repeat(2, 340px);
+			grid-template: repeat(3, 70px) / repeat(auto-fit, 320px);
 			grid-auto-rows: 70px;
 			row-gap: 30;
 			column-gap: 40px;
+			justify-content: space-between;
 		}
+	}
+
+	&__done {
+		justify-content: space-around;
 	}
 }
 @media (max-width: 768px) {
@@ -138,9 +169,10 @@
 	.skills {
 		&__block {
 			padding: 60px 10px 0 10px;
-			grid-template: repeat(4, 255px) / repeat(2, 255px);
+			grid-template: repeat(4, 255px) / repeat(auto_fit, 270px);
 			grid-auto-rows: 255px;
-			gap: 10px;
+			gap: 15px;
+			justify-content: center;
 			&-item {
 				padding: 25px;
 				width: 255px;
@@ -151,10 +183,17 @@
 	.progress{
 		padding-top: 60px;
 		&__wrapper{
-			grid-template: repeat(3,70px)/repeat(2,255px);
+			grid-template: repeat(3, 70px)/repeat(auto-fit, 320px);
 			grid-auto-rows: 70px;
 			row-gap: 30px;
 			column-gap: 30px;
+			justify-content: center;
+			}
+			}
+
+			.works {
+				&__done {
+					justify-content: center;
 		}
 	}
 }
@@ -211,9 +250,9 @@
 	.skills {
 		&__block {
 			padding: 60px 10px 0 10px;
-			grid-template: repeat(7, 270px) / repeat(1, 270px);
+			grid-template: repeat(7, 270px) / repeat(auto-fit, 270px);
 			grid-auto-rows: 270px;
-			gap: 10px;
+			gap: 15px;
 			&-item {
 				padding: 30px 30px 30px 25px;
 				border: 1px solid #000;
@@ -225,9 +264,10 @@
 	.progress{
 		padding-top: 40px;
 		&__wrapper{
-			grid-template: repeat(6,70px)/300px;
+			grid-template: repeat(2, 70px)/300px;
 			grid-auto-rows: 70px;
 			row-gap: 40px;
+			justify-content: center;
 		}
 	}
 }
